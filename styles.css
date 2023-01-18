@@ -16,11 +16,12 @@ color:white
 }
 
 main{
-    outline: 2px solid black;
-    margin: 30px auto;
+    width: 730px;
+    margin: 100px auto 50px;
     display: flex;
+    align-items: center;
 }
-
+/* estilos del panel de las cartas */
 .panel-tarjetas{
     background-color: var(--color-de-fondo-estadisticas);
     padding: 0 10px 10px 10px;
@@ -40,4 +41,32 @@ button{
 
 button:hover{
     cursor: pointer;
+}
+
+/* estilos del panel de estadisticas*/
+.contenedor-estadisticas-juego{
+    background-color: var(--color-de-fondo-estadisticas);
+    width: 250px;
+    height: 400px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0 20px;
+}
+
+.estadisticas{
+    outline: 1px solid white;
+    height: 105px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+footer{
+    
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: tomato;
 }
