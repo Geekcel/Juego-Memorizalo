@@ -1,3 +1,8 @@
+:root{
+--tipo-de-letra:'ARCO';
+--color-de-fondo-estadisticas:rgba(255, 255, 255, 0.2);
+}
+
 @font-face {
     font-family: 'ARCO';
     src: url(fonts/ARCO.ttf);
@@ -6,7 +11,7 @@
 body{
 background: rgb(2,0,36);
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 49%, rgba(0,212,255,1) 100%);
-font-family: 'ARCO';
+font-family: var(--tipo-de-letra);
 color:white
 }
 
@@ -17,7 +22,7 @@ main{
 }
 
 .panel-tarjetas{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--color-de-fondo-estadisticas);
     padding: 0 10px 10px 10px;
     border-radius: 8px;
 }
