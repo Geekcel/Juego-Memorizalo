@@ -10,13 +10,17 @@ let tiempoInicial = 30
 let tiempo = 30 //valor desde que empieza a correr el temporizador
 let cuentaRegresiva = null
 let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]
+let penitencias = ["Decir un versiculo llorando 😭", "Cantar un coro riendose 😆", "convertirte en un maniqui 🦿", "Hacer las dinamicas de un coro para niños 🕺🏼"]
 
 const botones = document.querySelectorAll('.boton')
 const mostrarMovimientos = document.getElementById('movimientos')
 const mostraAciertos = document.getElementById('aciertos')
 const mostrarTiempo = document.getElementById('t-restante')
+const contenedorPenitencia = document.getElementById('contenedor-penitencia')
+const penitencia = document.getElementById('penitencia')
 
 numeros= numeros.sort(()=>{return Math.random()-0.5})//*?Generacion de numeros aleatorios
+penitencias = penitencias[Math.floor(Math.random() * penitencias.length)]//? Genera penitencias aleatorias
 
 const contarTiempo = ()=>{
     cuentaRegresiva = setInterval(()=>{
@@ -35,6 +39,7 @@ const bloquearTarjetas = ()=>{
         tarjetaBloqueada.innerHTML= `<img src="images/${numeros[i]}.png">`
         tarjetaBloqueada.disabled = true
     }
+penitencia.innerHTML = `Perdiste😭, Tu penitencia es : ${penitencias}`
 }
 
 // funcion para detectar los clicks en cada una de las tarjetas
