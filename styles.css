@@ -1,11 +1,11 @@
 :root{
---tipo-de-letra:'ARCO';
+--tipo-de-letra:'Kanit-Regular';
 --color-de-fondo-estadisticas:rgba(255, 255, 255, 0.2);
 }
 
 @font-face {
-    font-family: 'ARCO';
-    src: url(fonts/ARCO.ttf);
+    font-family: 'Kanit-Regular';
+    src: url(fonts/Kanit-Regular.ttf);
 }
 
 body{
