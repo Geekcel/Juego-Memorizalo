@@ -32,7 +32,7 @@ const contarTiempo = ()=>{
 const bloquearTarjetas = ()=>{
     for (let i = 0; i <= 15; i++) {
         let tarjetaBloqueada = document.getElementById(i)
-        tarjetaBloqueada.innerHTML= numeros[i]
+        tarjetaBloqueada.innerHTML= `<img src="images/${numeros[i]}.png">`
         tarjetaBloqueada.disabled = true
     }
 }
@@ -53,7 +53,7 @@ const destapar = (seleccionado)=>{
         // mostrar primer numero
         tarjeta1 = document.getElementById(seleccion)
         primerResultado = numeros[seleccion]
-        tarjeta1.innerHTML = primerResultado
+        tarjeta1.innerHTML = `<img src="images/${primerResultado}.png">`
         //! Deshabilita primer boton
         tarjeta1.disabled=true
 
@@ -61,7 +61,7 @@ const destapar = (seleccionado)=>{
         // Mostrar segundo numero
         tarjeta2 = document.getElementById(seleccion)
         segundoResultado = numeros[seleccion]
-        tarjeta2.innerHTML = segundoResultado
+        tarjeta2.innerHTML = `<img src="images/${segundoResultado}.png">`
         //! Deshabilita primer boton
         tarjeta2.disabled = true
         //? incrementar movimientos
