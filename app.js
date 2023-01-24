@@ -104,5 +104,3 @@ const destapar = (seleccionado)=>{
 botones.forEach(boton => {
     boton.addEventListener('click', destapar)
 });
-
-console.log(numeros)
